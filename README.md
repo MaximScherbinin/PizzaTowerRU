@@ -15,6 +15,8 @@ https://gamebanana.com/mods/452787
 # Setup
 You need the latest dev build of UndertaleModTool: Community Edition for best results.
 
+**NOTE: Dev builds require GitHub account to download.**
+
 Pick the first link with the checkmark icon :white_check_mark:, scroll to bottom and choose one of the "Artifacts".
 
 https://github.com/XDOneDude/UndertaleModToolCE/actions
