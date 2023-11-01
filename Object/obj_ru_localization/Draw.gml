@@ -73,7 +73,7 @@ if (global.lang == "ru")
             spr_piledriverland = spr_playerN_piledriverland_ru
         }
     }
-    if instance_exists(obj_mrmooney)
+	if instance_exists(obj_mrmooney)
     {
         with (obj_mrmooney)
         {
@@ -100,7 +100,10 @@ if (global.lang == "ru")
             cx = camera_get_view_x(view_camera[0])
             cy = camera_get_view_y(view_camera[0])
             draw_sprite_ext(sprite1122, 0, cx, cy, (obj_screensizer.actual_width / 64), (obj_screensizer.actual_height / 64), 0, c_white, 1)
-            draw_sprite(spr_mainmenu_bg, 0, obj_screensizer.normal_size_fix_x, 0)
+            var index = 0
+            if is_holiday((1 << 0))
+                index = 1
+            draw_sprite(spr_mainmenu_bg, index, obj_screensizer.normal_size_fix_x, 0)
             shader_set(global.Pal_Shader)
             _x = (obj_screensizer.actual_width * 0.50625)
             _y = y
@@ -131,15 +134,17 @@ if (global.lang == "ru")
             draw_set_halign(fa_center)
             draw_set_valign(fa_middle)
             draw_set_color(c_white)
-            draw_sprite(spr_controlseggplant_ru, (obj_inputAssigner.player_input_device[0] < 0 ? 0 : 1), (obj_screensizer.actual_width * 0.853125), 84)
-            scr_draw_text_arr((options_x - 88), (options_y - 37), start_key, 16777215)
-			var status_x = 183
+            var options_x = (obj_screensizer.actual_width * 0.853125)
+            var options_y = 84
+            draw_sprite(spr_controlseggplant_ru, 0, options_x, options_y)
+            var status_x = 183
             var status_y = 312
             var percentstate_x = 199
             var percentstate_y = 443
             var deletefile_x = 779
             var deletefile_y = 449
             draw_sprite(spr_towerstatusmenu_ru, 0, status_x, status_y)
+            scr_draw_text_arr((options_x - 88), (options_y - 37), start_key, 16777215)
             draw_set_font(global.combofont)
             draw_text((status_x + 8), (status_y + 10), floor(percvisual))
             draw_sprite(spr_percentstatemenu, perstatus_icon, percentstate_x, percentstate_y)
@@ -187,7 +192,7 @@ if (global.lang == "ru")
             scr_draw_text_arr((deletefile_x - 67), deletefile_y, taunt_key, 16777215, dal)
             draw_set_alpha(1)
         }
-		if instance_exists(obj_menutv2)
+        if instance_exists(obj_menutv2)
         {
             with (obj_menutv2)
                 draw_self()
