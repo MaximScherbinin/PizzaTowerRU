@@ -89,10 +89,10 @@ if (global.lang == "ru") {
 var pre_signspr = signspr
 if (global.lang == "ru")
 {
-    if (signspr == 3301)
-        signspr = 4390
-    else if (signspr == 3218)
-        signspr = 4395
+    if (signspr == spr_preparetodraw)
+        signspr = spr_preparetodraw_ru
+    else if (signspr == spr_draw)
+        signspr = spr_draw_ru
 }
 draw_sprite(signspr, 0, (obj_screensizer.actual_width / 2), signy)
 signspr = pre_signspr
