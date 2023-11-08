@@ -97,6 +97,10 @@ if (global.lang == "ru")
 draw_sprite(signspr, 0, (obj_screensizer.actual_width / 2), signy)
 signspr = pre_signspr
 
+// Line 23
+// gml_Object_obj_jumpscare_Draw_64
+draw_sprite((global.lang == "ru" ? spr_oktoberfest_ru : spr_oktoberfest), 0, obj_screensizer.normal_size_fix_x, obj_screensizer.normal_size_fix_y)
+
 // Line 21
 // gml_Object_obj_tv_Draw_64
 draw_sprite((global.lang == "ru" ? spr_tv_combobubble_ru : spr_tv_combobubble), -1, _cx, _cy)
