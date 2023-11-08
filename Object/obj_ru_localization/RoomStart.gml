@@ -3,7 +3,7 @@
 if (global.lang == "ru")
 {
     f_as_spr_ch(tower_entrancehall, "Assets_BG2", 0, spr_towerwelcome_ru) // Welcome sign
-    f_as_spr_ch(tower_1, "Assets_2", 0, spr_nextfloor_ru) // Next Floor sign
+    f_as_spr_ch(tower_1, "Assets_1", 4, spr_nextfloor_ru) // Next Floor sign
     f_as_spr_ch(tower_4, "Assets_BG1", 0, spr_farenoughbuddy_ru)
     f_as_spr_ch(tower_4, "Assets_BG1", 8, spr_noisetea_ru)
     f_as_spr_ch(tower_noisettecafe, "Assets_BG", 0, spr_noisettecafepanel_ru)
