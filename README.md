@@ -1,7 +1,7 @@
 # PizzaTowerRU
 Russian translation source code for Pizza Tower (PC, 2023)
 
-**THIS SOURCE CODE IS OUTDATED!!! The translation is using completely new system since v2, and I am not going to publish new source code due to drama with certain PT translation community. You can contact me privately on Discord.**
+**THIS SOURCE CODE IS OUTDATED!!! The translation is using completely new system since v2, and I am not going to publish new source code due to drama with certain PT translation community. You can contact me privately on Discord for any help.**
 
 Russian translation by Translation Travesty
 
